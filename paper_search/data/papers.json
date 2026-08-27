@@ -1,0 +1,434 @@
+[
+  {
+    "title": "Changing Data Sources in the Age of Machine Learning for Official Statistics",
+    "abstract": "Data science has become increasingly essential for the production of official statistics, as it enables the automated collection, processing, and analysis of large amounts of data. With such data science practices in place, it enables more timely, more insightful and more flexible reporting. However, the quality and integrity of data-science-driven statistics rely on the accuracy and reliability of the data sources and the machine learning techniques that support them. In particular, changes in data sources are inevitable to occur and pose significant risks that are crucial to address in the context of machine learning for official statistics.\n  This paper gives an overview of the main risks, liabilities, and uncertainties associated with changing data sources in the context of machine learning for official statistics. We provide a checklist of the most prevalent origins and causes of changing data sources; not only on a technical level but also regarding ownership, ethics, regulation, and public perception. Next, we highlight the repercussions of changing data sources on statistical reporting. These include technical effects such as concept drift, bias, availability, validity, accuracy and completeness, but also the neutrality and potential discontinuation of the statistical offering. We offer a few important precautionary measures, such as enhancing robustness in both data sourcing and statistical techniques, and thorough monitoring. In doing so, machine learning-based official statistics can maintain integrity, reliability, consistency, and relevance in policy-making, decision-making, and public discourse.",
+    "authors": [
+      "Cedric De Boom",
+      "Michael Reusens"
+    ],
+    "url": "https://arxiv.org/abs/2306.04338v1",
+    "published": "2023-06-07T11:08:12Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "DOME: Recommendations for supervised machine learning validation in biology",
+    "abstract": "Modern biology frequently relies on machine learning to provide predictions and improve decision processes. There have been recent calls for more scrutiny on machine learning performance and possible limitations. Here we present a set of community-wide recommendations aiming to help establish standards of supervised machine learning validation in biology. Adopting a structured methods description for machine learning based on data, optimization, model, evaluation (DOME) will aim to help both reviewers and readers to better understand and assess the performance and limitations of a method or outcome. The recommendations are formulated as questions to anyone wishing to pursue implementation of a machine learning algorithm. Answers to these questions can be easily included in the supplementary material of published papers.",
+    "authors": [
+      "Ian Walsh",
+      "Dmytro Fishman",
+      "Dario Garcia-Gasulla",
+      "Tiina Titma",
+      "Gianluca Pollastri",
+      "The ELIXIR Machine Learning focus group",
+      "Jen Harrow",
+      "Fotis E. Psomopoulos",
+      "Silvio C. E. Tosatto"
+    ],
+    "url": "https://arxiv.org/abs/2006.16189v4",
+    "published": "2020-06-25T12:01:39Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Learning Curves for Decision Making in Supervised Machine Learning: A Survey",
+    "abstract": "Learning curves are a concept from social sciences that has been adopted in the context of machine learning to assess the performance of a learning algorithm with respect to a certain resource, e.g., the number of training examples or the number of training iterations. Learning curves have important applications in several machine learning contexts, most notably in data acquisition, early stopping of model training, and model selection. For instance, learning curves can be used to model the performance of the combination of an algorithm and its hyperparameter configuration, providing insights into their potential suitability at an early stage and often expediting the algorithm selection process. Various learning curve models have been proposed to use learning curves for decision making. Some of these models answer the binary decision question of whether a given algorithm at a certain budget will outperform a certain reference performance, whereas more complex models predict the entire learning curve of an algorithm. We contribute a framework that categorises learning curve approaches using three criteria: the decision-making situation they address, the intrinsic learning curve question they answer and the type of resources they use. We survey papers from the literature and classify them into this framework.",
+    "authors": [
+      "Felix Mohr",
+      "Jan N. van Rijn"
+    ],
+    "url": "https://arxiv.org/abs/2201.12150v2",
+    "published": "2022-01-28T14:34:32Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Active learning for data streams: a survey",
+    "abstract": "Online active learning is a paradigm in machine learning that aims to select the most informative data points to label from a data stream. The problem of minimizing the cost associated with collecting labeled observations has gained a lot of attention in recent years, particularly in real-world applications where data is only available in an unlabeled form. Annotating each observation can be time-consuming and costly, making it difficult to obtain large amounts of labeled data. To overcome this issue, many active learning strategies have been proposed in the last decades, aiming to select the most informative observations for labeling in order to improve the performance of machine learning models. These approaches can be broadly divided into two categories: static pool-based and stream-based active learning. Pool-based active learning involves selecting a subset of observations from a closed pool of unlabeled data, and it has been the focus of many surveys and literature reviews. However, the growing availability of data streams has led to an increase in the number of approaches that focus on online active learning, which involves continuously selecting and labeling observations as they arrive in a stream. This work aims to provide an overview of the most recently proposed approaches for selecting the most informative observations from data streams in real time. We review the various techniques that have been proposed and discuss their strengths and limitations, as well as the challenges and opportunities that exist in this area of research.",
+    "authors": [
+      "Davide Cacciarelli",
+      "Murat Kulahci"
+    ],
+    "url": "https://arxiv.org/abs/2302.08893v4",
+    "published": "2023-02-17T14:24:13Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Physics-Inspired Interpretability Of Machine Learning Models",
+    "abstract": "The ability to explain decisions made by machine learning models remains one of the most significant hurdles towards widespread adoption of AI in highly sensitive areas such as medicine, cybersecurity or autonomous driving. Great interest exists in understanding which features of the input data prompt model decision making. In this contribution, we propose a novel approach to identify relevant features of the input data, inspired by methods from the energy landscapes field, developed in the physical sciences. By identifying conserved weights within groups of minima of the loss landscapes, we can identify the drivers of model decision making. Analogues to this idea exist in the molecular sciences, where coordinate invariants or order parameters are employed to identify critical features of a molecule. However, no such approach exists for machine learning loss landscapes. We will demonstrate the applicability of energy landscape methods to machine learning models and give examples, both synthetic and from the real world, for how these methods can help to make models more interpretable.",
+    "authors": [
+      "Maximilian P Niroomand",
+      "David J Wales"
+    ],
+    "url": "https://arxiv.org/abs/2304.02381v2",
+    "published": "2023-04-05T11:35:17Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Privacy-preserving machine learning for healthcare: open challenges and future perspectives",
+    "abstract": "Machine Learning (ML) has recently shown tremendous success in modeling various healthcare prediction tasks, ranging from disease diagnosis and prognosis to patient treatment. Due to the sensitive nature of medical data, privacy must be considered along the entire ML pipeline, from model training to inference. In this paper, we conduct a review of recent literature concerning Privacy-Preserving Machine Learning (PPML) for healthcare. We primarily focus on privacy-preserving training and inference-as-a-service, and perform a comprehensive review of existing trends, identify challenges, and discuss opportunities for future research directions. The aim of this review is to guide the development of private and efficient ML models in healthcare, with the prospects of translating research efforts into real-world settings.",
+    "authors": [
+      "Alejandro Guerra-Manzanares",
+      "L. Julian Lechuga Lopez",
+      "Michail Maniatakos",
+      "Farah E. Shamout"
+    ],
+    "url": "https://arxiv.org/abs/2303.15563v1",
+    "published": "2023-03-27T19:20:51Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "A Benchmark Study of Machine Learning Models for Online Fake News Detection",
+    "abstract": "The proliferation of fake news and its propagation on social media has become a major concern due to its ability to create devastating impacts. Different machine learning approaches have been suggested to detect fake news. However, most of those focused on a specific type of news (such as political) which leads us to the question of dataset-bias of the models used. In this research, we conducted a benchmark study to assess the performance of different applicable machine learning approaches on three different datasets where we accumulated the largest and most diversified one. We explored a number of advanced pre-trained language models for fake news detection along with the traditional and deep learning ones and compared their performances from different aspects for the first time to the best of our knowledge. We find that BERT and similar pre-trained models perform the best for fake news detection, especially with very small dataset. Hence, these models are significantly better option for languages with limited electronic contents, i.e., training data. We also carried out several analysis based on the models' performance, article's topic, article's length, and discussed different lessons learned from them. We believe that this benchmark study will help the research community to explore further and news sites/blogs to select the most appropriate fake news detection method.",
+    "authors": [
+      "Junaed Younus Khan",
+      "Md. Tawkat Islam Khondaker",
+      "Sadia Afroz",
+      "Gias Uddin",
+      "Anindya Iqbal"
+    ],
+    "url": "https://arxiv.org/abs/1905.04749v2",
+    "published": "2019-05-12T17:15:11Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "MerLin: A Discovery Engine for Photonic and Hybrid Quantum Machine Learning",
+    "abstract": "Identifying where quantum models may offer practical benefits in near term quantum machine learning (QML) requires moving beyond isolated algorithmic proposals toward systematic and empirical exploration across models, datasets, and hardware constraints. We introduce MerLin, an open-source framework designed as a discovery engine for photonic and hybrid quantum machine learning. MerLin integrates optimized strong simulation of linear optical circuits into standard PyTorch and scikit learn workflows, enabling end-to-end differentiable training of quantum layers.\n  MerLin is designed around systematic benchmarking and reproducibility. As an initial contribution, we reproduce eighteen state-of-the-art photonic and hybrid QML works spanning kernel methods, reservoir computing, convolutional and recurrent architectures, generative models, and modern training paradigms. These reproductions are released as reusable, modular experiments that can be directly extended and adapted, establishing a shared experimental baseline consistent with empirical benchmarking methodologies widely adopted in modern artificial intelligence.\n  By embedding photonic quantum models within established machine learning ecosystems, MerLin allows practitioners to leverage existing tooling for ablation studies, cross-modality comparisons, and hybrid classical-quantum workflows. The framework already implements hardware-aware features, allowing tests on available quantum hardware while enabling exploration beyond its current capabilities, positioning MerLin as a forward-looking co-design tool linking algorithms, benchmarks, and hardware.",
+    "authors": [
+      "Cassandre Notton",
+      "Benjamin Stott",
+      "Philippe Schoeb",
+      "Anthony Walsh",
+      "Grégoire Leboucher",
+      "Vincent Espitalier",
+      "Vassilis Apostolou",
+      "Louis-Félix Vigneux",
+      "Alexia Salavrakos",
+      "Jean Senellart"
+    ],
+    "url": "https://arxiv.org/abs/2602.11092v2",
+    "published": "2026-02-11T18:00:01Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Emotion in Reinforcement Learning Agents and Robots: A Survey",
+    "abstract": "This article provides the first survey of computational models of emotion in reinforcement learning (RL) agents. The survey focuses on agent/robot emotions, and mostly ignores human user emotions. Emotions are recognized as functional in decision-making by influencing motivation and action selection. Therefore, computational emotion models are usually grounded in the agent's decision making architecture, of which RL is an important subclass. Studying emotions in RL-based agents is useful for three research fields. For machine learning (ML) researchers, emotion models may improve learning efficiency. For the interactive ML and human-robot interaction (HRI) community, emotions can communicate state and enhance user investment. Lastly, it allows affective modelling (AM) researchers to investigate their emotion theories in a successful AI agent class. This survey provides background on emotion theory and RL. It systematically addresses 1) from what underlying dimensions (e.g., homeostasis, appraisal) emotions can be derived and how these can be modelled in RL-agents, 2) what types of emotions have been derived from these dimensions, and 3) how these emotions may either influence the learning efficiency of the agent or be useful as social signals. We also systematically compare evaluation criteria, and draw connections to important RL sub-domains like (intrinsic) motivation and model-based RL. In short, this survey provides both a practical overview for engineers wanting to implement emotions in their RL agents, and identifies challenges and directions for future emotion-RL research.",
+    "authors": [
+      "Thomas M. Moerland",
+      "Joost Broekens",
+      "Catholijn M. Jonker"
+    ],
+    "url": "https://arxiv.org/abs/1705.05172v1",
+    "published": "2017-05-15T11:49:56Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Fourier Learning Machines: Nonharmonic Fourier-Based Neural Networks for Scientific Machine Learning",
+    "abstract": "We introduce the Fourier Learning Machine (FLM), a neural network (NN) architecture designed to represent a multidimensional nonharmonic Fourier series. The FLM uses a simple feedforward structure with cosine activation functions to learn the frequencies, amplitudes, and phase shifts of the series as trainable parameters. This design allows the model to create a problem-specific spectral basis adaptable to both periodic and nonperiodic functions. Unlike previous Fourier-inspired NN models, the FLM is the first architecture able to represent a multidimensional Fourier series with a complete set of basis functions in separable form, doing so by using a standard Multilayer Perceptron-like architecture. A one-to-one correspondence between the Fourier coefficients and amplitudes and phase-shifts is demonstrated, allowing for the translation between a full, separable basis form and the cosine phase-shifted one. Additionally, we evaluate the performance of FLMs on several scientific computing problems, including benchmark Partial Differential Equations (PDEs) and a family of Optimal Control Problems (OCPs). Computational experiments show that the performance of FLMs is comparable, and often superior, to that of established architectures like SIREN and vanilla feedforward NNs.",
+    "authors": [
+      "Mominul Rubel",
+      "Adam Meyers",
+      "Gabriel Nicolosi"
+    ],
+    "url": "https://arxiv.org/abs/2509.08759v3",
+    "published": "2025-09-10T16:49:20Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "WiCV 2019: The Sixth Women In Computer Vision Workshop",
+    "abstract": "In this paper we present the Women in Computer Vision Workshop - WiCV 2019, organized in conjunction with CVPR 2019. This event is meant for increasing the visibility and inclusion of women researchers in the computer vision field. Computer vision and machine learning have made incredible progress over the past years, but the number of female researchers is still low both in academia and in industry. WiCV is organized especially for the following reason: to raise visibility of female researchers, to increase collaborations between them, and to provide mentorship to female junior researchers in the field. In this paper, we present a report of trends over the past years, along with a summary of statistics regarding presenters, attendees, and sponsorship for the current workshop.",
+    "authors": [
+      "Irene Amerini",
+      "Elena Balashova",
+      "Sayna Ebrahimi",
+      "Kathryn Leonard",
+      "Arsha Nagrani",
+      "Amaia Salvador"
+    ],
+    "url": "https://arxiv.org/abs/1909.10225v1",
+    "published": "2019-09-23T08:52:33Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Spatial Monitoring and Insect Behavioural Analysis Using Computer Vision for Precision Pollination",
+    "abstract": "Insects are the most important global pollinator of crops and play a key role in maintaining the sustainability of natural ecosystems. Insect pollination monitoring and management are therefore essential for improving crop production and food security. Computer vision facilitated pollinator monitoring can intensify data collection over what is feasible using manual approaches. The new data it generates may provide a detailed understanding of insect distributions and facilitate fine-grained analysis sufficient to predict their pollination efficacy and underpin precision pollination. Current computer vision facilitated insect tracking in complex outdoor environments is restricted in spatial coverage and often constrained to a single insect species. This limits its relevance to agriculture. Therefore, in this article we introduce a novel system to facilitate markerless data capture for insect counting, insect motion tracking, behaviour analysis and pollination prediction across large agricultural areas. Our system is comprised of edge computing multi-point video recording, offline automated multispecies insect counting, tracking and behavioural analysis. We implement and test our system on a commercial berry farm to demonstrate its capabilities. Our system successfully tracked four insect varieties, at nine monitoring stations within polytunnels, obtaining an F-score above 0.8 for each variety. The system enabled calculation of key metrics to assess the relative pollination impact of each insect variety. With this technological advancement, detailed, ongoing data collection for precision pollination becomes achievable. This is important to inform growers and apiarists managing crop pollination, as it allows data-driven decisions to be made to improve food production and food security.",
+    "authors": [
+      "Malika Nisal Ratnayake",
+      "Don Chathurika Amarathunga",
+      "Asaduz Zaman",
+      "Adrian G. Dyer",
+      "Alan Dorin"
+    ],
+    "url": "https://arxiv.org/abs/2205.04675v2",
+    "published": "2022-05-10T05:11:28Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Global Adaptive Filtering Layer for Computer Vision",
+    "abstract": "We devise a universal adaptive neural layer to \"learn\" optimal frequency filter for each image together with the weights of the base neural network that performs some computer vision task. The proposed approach takes the source image in the spatial domain, automatically selects the best frequencies from the frequency domain, and transmits the inverse-transform image to the main neural network. Remarkably, such a simple add-on layer dramatically improves the performance of the main network regardless of its design. We observe that the light networks gain a noticeable boost in the performance metrics; whereas, the training of the heavy ones converges faster when our adaptive layer is allowed to \"learn\" alongside the main architecture. We validate the idea in four classical computer vision tasks: classification, segmentation, denoising, and erasing, considering popular natural and medical data benchmarks.",
+    "authors": [
+      "Viktor Shipitsin",
+      "Iaroslav Bespalov",
+      "Dmitry V. Dylov"
+    ],
+    "url": "https://arxiv.org/abs/2010.01177v4",
+    "published": "2020-10-02T19:43:49Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "What Does TERRA-REF's High Resolution, Multi Sensor Plant Sensing Public Domain Data Offer the Computer Vision Community?",
+    "abstract": "A core objective of the TERRA-REF project was to generate an open-access reference dataset for the evaluation of sensing technologies to study plants under field conditions. The TERRA-REF program deployed a suite of high-resolution, cutting edge technology sensors on a gantry system with the aim of scanning 1 hectare (10$^4$) at around 1 mm$^2$ spatial resolution multiple times per week. The system contains co-located sensors including a stereo-pair RGB camera, a thermal imager, a laser scanner to capture 3D structure, and two hyperspectral cameras covering wavelengths of 300-2500nm. This sensor data is provided alongside over sixty types of traditional plant phenotype measurements that can be used to train new machine learning models. Associated weather and environmental measurements, information about agronomic management and experimental design, and the genomic sequences of hundreds of plant varieties have been collected and are available alongside the sensor and plant phenotype data.\n  Over the course of four years and ten growing seasons, the TERRA-REF system generated over 1 PB of sensor data and almost 45 million files. The subset that has been released to the public domain accounts for two seasons and about half of the total data volume. This provides an unprecedented opportunity for investigations far beyond the core biological scope of the project.\n  The focus of this paper is to provide the Computer Vision and Machine Learning communities an overview of the available data and some potential applications of this one of a kind data.",
+    "authors": [
+      "David LeBauer",
+      "Max Burnette",
+      "Noah Fahlgren",
+      "Rob Kooper",
+      "Kenton McHenry",
+      "Abby Stylianou"
+    ],
+    "url": "https://arxiv.org/abs/2107.14072v2",
+    "published": "2021-07-29T15:01:29Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "The Informed Sampler: A Discriminative Approach to Bayesian Inference in Generative Computer Vision Models",
+    "abstract": "Computer vision is hard because of a large variability in lighting, shape, and texture; in addition the image signal is non-additive due to occlusion. Generative models promised to account for this variability by accurately modelling the image formation process as a function of latent variables with prior beliefs. Bayesian posterior inference could then, in principle, explain the observation. While intuitively appealing, generative models for computer vision have largely failed to deliver on that promise due to the difficulty of posterior inference. As a result the community has favoured efficient discriminative approaches. We still believe in the usefulness of generative models in computer vision, but argue that we need to leverage existing discriminative or even heuristic computer vision methods. We implement this idea in a principled way with an \"informed sampler\" and in careful experiments demonstrate it on challenging generative models which contain renderer programs as their components. We concentrate on the problem of inverting an existing graphics rendering engine, an approach that can be understood as \"Inverse Graphics\". The informed sampler, using simple discriminative proposals based on existing computer vision technology, achieves significant improvements of inference.",
+    "authors": [
+      "Varun Jampani",
+      "Sebastian Nowozin",
+      "Matthew Loper",
+      "Peter V. Gehler"
+    ],
+    "url": "https://arxiv.org/abs/1402.0859v3",
+    "published": "2014-02-04T20:52:26Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Novel Convolution Kernels for Computer Vision and Shape Analysis based on Electromagnetism",
+    "abstract": "Computer vision is a growing field with a lot of new applications in automation and robotics, since it allows the analysis of images and shapes for the generation of numerical or analytical information. One of the most used method of information extraction is image filtering through convolution kernels, with each kernel specialized for specific applications. The objective of this paper is to present a novel convolution kernels, based on principles of electromagnetic potentials and fields, for a general use in computer vision and to demonstrate its usage for shape and stroke analysis. Such filtering possesses unique geometrical properties that can be interpreted using well understood physics theorems. Therefore, this paper focuses on the development of the electromagnetic kernels and on their application on images for shape and stroke analysis. It also presents several interesting features of electromagnetic kernels, such as resolution, size and orientation independence, robustness to noise and deformation, long distance stroke interaction and ability to work with 3D images",
+    "authors": [
+      "Dominique Beaini",
+      "Sofiane Achiche",
+      "Yann-Seing Law-Kam Cio",
+      "Maxime Raison"
+    ],
+    "url": "https://arxiv.org/abs/1806.07996v1",
+    "published": "2018-06-20T21:31:00Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Vision Based Game Development Using Human Computer Interaction",
+    "abstract": "A Human Computer Interface (HCI) System for playing games is designed here for more natural communication with the machines. The system presented here is a vision-based system for detection of long voluntary eye blinks and interpretation of blink patterns for communication between man and machine. This system replaces the mouse with the human face as a new way to interact with the computer. Facial features (nose tip and eyes) are detected and tracked in realtime to use their actions as mouse events. The coordinates and movement of the nose tip in the live video feed are translated to become the coordinates and movement of the mouse pointer on the application. The left or right eye blinks fire left or right mouse click events. The system works with inexpensive USB cameras and runs at a frame rate of 30 frames per second.",
+    "authors": [
+      "S. Sumathi",
+      "S. K. Srivatsa",
+      "M. Uma Maheswari"
+    ],
+    "url": "https://arxiv.org/abs/1002.2191v1",
+    "published": "2010-02-10T19:46:07Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Hierarchical Pre-Training of Vision Encoders with Large Language Model",
+    "abstract": "The field of computer vision has experienced significant advancements through scalable vision encoders and multimodal pre-training frameworks. However, existing approaches often treat vision encoders and large language models (LLMs) as independent modules, limiting the integration of hierarchical visual features. In this work, we propose HIVE (Hierarchical Pre-Training of Vision Encoders), a novel framework that enhances vision-language alignment by introducing hierarchical cross-attention between the vision encoder and LLM. Unlike conventional methods that flatten image embeddings, HIVE enables structured feature fusion across multiple layers, improving gradient flow and representation learning. To optimize this interaction, we introduce a three-stage training strategy that progressively aligns the vision encoder with the LLM, ensuring stable optimization and effective multimodal fusion. Empirical evaluations demonstrate that HIVE achieves superior performance not only in image classification but also on various vision-language tasks, outperforming self-attention-based methods in benchmarks such as MME, GQA, OK-VQA, and ScienceQA. Our results highlight the benefits of hierarchical feature integration, paving the way for more efficient and expressive vision-language models.",
+    "authors": [
+      "Eugene Lee",
+      "Ting-Yu Chang",
+      "Jui-Huang Tsai",
+      "Jiajie Diao",
+      "Chen-Yi Lee"
+    ],
+    "url": "https://arxiv.org/abs/2604.00086v2",
+    "published": "2026-03-31T18:00:39Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Crowdsourcing in Computer Vision",
+    "abstract": "Computer vision systems require large amounts of manually annotated data to properly learn challenging visual concepts. Crowdsourcing platforms offer an inexpensive method to capture human knowledge and understanding, for a vast number of visual perception tasks. In this survey, we describe the types of annotations computer vision researchers have collected using crowdsourcing, and how they have ensured that this data is of high quality while annotation effort is minimized. We begin by discussing data collection on both classic (e.g., object recognition) and recent (e.g., visual story-telling) vision tasks. We then summarize key design decisions for creating effective data collection interfaces and workflows, and present strategies for intelligently selecting the most important data instances to annotate. Finally, we conclude with some thoughts on the future of crowdsourcing in computer vision.",
+    "authors": [
+      "Adriana Kovashka",
+      "Olga Russakovsky",
+      "Li Fei-Fei",
+      "Kristen Grauman"
+    ],
+    "url": "https://arxiv.org/abs/1611.02145v1",
+    "published": "2016-11-07T16:11:19Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "FedCV: A Federated Learning Framework for Diverse Computer Vision Tasks",
+    "abstract": "Federated Learning (FL) is a distributed learning paradigm that can learn a global or personalized model from decentralized datasets on edge devices. However, in the computer vision domain, model performance in FL is far behind centralized training due to the lack of exploration in diverse tasks with a unified FL framework. FL has rarely been demonstrated effectively in advanced computer vision tasks such as object detection and image segmentation. To bridge the gap and facilitate the development of FL for computer vision tasks, in this work, we propose a federated learning library and benchmarking framework, named FedCV, to evaluate FL on the three most representative computer vision tasks: image classification, image segmentation, and object detection. We provide non-I.I.D. benchmarking datasets, models, and various reference FL algorithms. Our benchmark study suggests that there are multiple challenges that deserve future exploration: centralized training tricks may not be directly applied to FL; the non-I.I.D. dataset actually downgrades the model accuracy to some degree in different tasks; improving the system efficiency of federated training is challenging given the huge number of parameters and the per-client memory cost. We believe that such a library and benchmark, along with comparable evaluation settings, is necessary to make meaningful progress in FL on computer vision tasks. FedCV is publicly available: https://github.com/FedML-AI/FedCV.",
+    "authors": [
+      "Chaoyang He",
+      "Alay Dilipbhai Shah",
+      "Zhenheng Tang",
+      "Di Fan1Adarshan Naiynar Sivashunmugam",
+      "Keerti Bhogaraju",
+      "Mita Shimpi",
+      "Li Shen",
+      "Xiaowen Chu",
+      "Mahdi Soltanolkotabi",
+      "Salman Avestimehr"
+    ],
+    "url": "https://arxiv.org/abs/2111.11066v1",
+    "published": "2021-11-22T09:26:08Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "An Open Natural Language Processing Development Framework for EHR-based Clinical Research: A case demonstration using the National COVID Cohort Collaborative (N3C)",
+    "abstract": "While we pay attention to the latest advances in clinical natural language processing (NLP), we can notice some resistance in the clinical and translational research community to adopt NLP models due to limited transparency, interpretability, and usability. In this study, we proposed an open natural language processing development framework. We evaluated it through the implementation of NLP algorithms for the National COVID Cohort Collaborative (N3C). Based on the interests in information extraction from COVID-19 related clinical notes, our work includes 1) an open data annotation process using COVID-19 signs and symptoms as the use case, 2) a community-driven ruleset composing platform, and 3) a synthetic text data generation workflow to generate texts for information extraction tasks without involving human subjects. The corpora were derived from texts from three different institutions (Mayo Clinic, University of Kentucky, University of Minnesota). The gold standard annotations were tested with a single institution's (Mayo) ruleset. This resulted in performances of 0.876, 0.706, and 0.694 in F-scores for Mayo, Minnesota, and Kentucky test datasets, respectively. The study as a consortium effort of the N3C NLP subgroup demonstrates the feasibility of creating a federated NLP algorithm development and benchmarking platform to enhance multi-institution clinical NLP study and adoption. Although we use COVID-19 as a use case in this effort, our framework is general enough to be applied to other domains of interest in clinical NLP.",
+    "authors": [
+      "Sijia Liu",
+      "Andrew Wen",
+      "Liwei Wang",
+      "Huan He",
+      "Sunyang Fu",
+      "Robert Miller",
+      "Andrew Williams",
+      "Daniel Harris",
+      "Ramakanth Kavuluru",
+      "Mei Liu",
+      "Noor Abu-el-rub",
+      "Dalton Schutte",
+      "Rui Zhang",
+      "Masoud Rouhizadeh",
+      "John D. Osborne",
+      "Yongqun He",
+      "Umit Topaloglu",
+      "Stephanie S Hong",
+      "Joel H Saltz",
+      "Thomas Schaffter",
+      "Emily Pfaff",
+      "Christopher G. Chute",
+      "Tim Duong",
+      "Melissa A. Haendel",
+      "Rafael Fuentes",
+      "Peter Szolovits",
+      "Hua Xu",
+      "Hongfang Liu",
+      "National COVID Cohort Collaborative",
+      "Natural Language Processing",
+      "Subgroup",
+      "National COVID Cohort Collaborative"
+    ],
+    "url": "https://arxiv.org/abs/2110.10780v3",
+    "published": "2021-10-20T21:09:41Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "A Comprehensive Review of State-of-The-Art Methods for Java Code Generation from Natural Language Text",
+    "abstract": "Java Code Generation consists in generating automatically Java code from a Natural Language Text. This NLP task helps in increasing programmers' productivity by providing them with immediate solutions to the simplest and most repetitive tasks. Code generation is a challenging task because of the hard syntactic rules and the necessity of a deep understanding of the semantic aspect of the programming language. Many works tried to tackle this task using either RNN-based, or Transformer-based models. The latter achieved remarkable advancement in the domain and they can be divided into three groups: (1) encoder-only models, (2) decoder-only models, and (3) encoder-decoder models. In this paper, we provide a comprehensive review of the evolution and progress of deep learning models in Java code generation task. We focus on the most important methods and present their merits and limitations, as well as the objective functions used by the community. In addition, we provide a detailed description of datasets and evaluation metrics used in the literature. Finally, we discuss results of different models on CONCODE dataset, then propose some future directions.",
+    "authors": [
+      "Jessica López Espejel",
+      "Mahaman Sanoussi Yahaya Alassan",
+      "El Mehdi Chouham",
+      "Walid Dahhane",
+      "El Hassane Ettifouri"
+    ],
+    "url": "https://arxiv.org/abs/2306.06371v1",
+    "published": "2023-06-10T07:27:51Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Towards the Study of Morphological Processing of the Tangkhul Language",
+    "abstract": "There is no or little work on natural language processing of Tangkhul language. The current work is a humble beginning of morphological processing of this language using an unsupervised approach. We use a small corpus collected from different sources of text books, short stories and articles of other topics. Based on the experiments carried out, the morpheme identification task using morphessor gives reasonable and interesting output despite using a small corpus.",
+    "authors": [
+      "Mirinso Shadang",
+      "Navanath Saharia",
+      "Thoudam Doren Singh"
+    ],
+    "url": "https://arxiv.org/abs/2006.16212v1",
+    "published": "2020-06-29T17:24:09Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "An Automated Multiple-Choice Question Generation Using Natural Language Processing Techniques",
+    "abstract": "Automatic multiple-choice question generation (MCQG) is a useful yet challenging task in Natural Language Processing (NLP). It is the task of automatic generation of correct and relevant questions from textual data. Despite its usefulness, manually creating sizeable, meaningful and relevant questions is a time-consuming and challenging task for teachers. In this paper, we present an NLP-based system for automatic MCQG for Computer-Based Testing Examination (CBTE).We used NLP technique to extract keywords that are important words in a given lesson material. To validate that the system is not perverse, five lesson materials were used to check the effectiveness and efficiency of the system. The manually extracted keywords by the teacher were compared to the auto-generated keywords and the result shows that the system was capable of extracting keywords from lesson materials in setting examinable questions. This outcome is presented in a user-friendly interface for easy accessibility.",
+    "authors": [
+      "Chidinma A. Nwafor",
+      "Ikechukwu E. Onyenwe"
+    ],
+    "url": "https://arxiv.org/abs/2103.14757v1",
+    "published": "2021-03-26T22:39:59Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "SpeechPrompt: Prompting Speech Language Models for Speech Processing Tasks",
+    "abstract": "Prompting has become a practical method for utilizing pre-trained language models (LMs). This approach offers several advantages. It allows an LM to adapt to new tasks with minimal training and parameter updates, thus achieving efficiency in both storage and computation. Additionally, prompting modifies only the LM's inputs and harnesses the generative capabilities of language models to address various downstream tasks in a unified manner. This significantly reduces the need for human labor in designing task-specific models. These advantages become even more evident as the number of tasks served by the LM scales up. Motivated by the strengths of prompting, we are the first to explore the potential of prompting speech LMs in the domain of speech processing. Recently, there has been a growing interest in converting speech into discrete units for language modeling. Our pioneer research demonstrates that these quantized speech units are highly versatile within our unified prompting framework. Not only can they serve as class labels, but they also contain rich phonetic information that can be re-synthesized back into speech signals for speech generation tasks. Specifically, we reformulate speech processing tasks into speech-to-unit generation tasks. As a result, we can seamlessly integrate tasks such as speech classification, sequence generation, and speech generation within a single, unified prompting framework. The experiment results show that the prompting method can achieve competitive performance compared to the strong fine-tuning method based on self-supervised learning models with a similar number of trainable parameters. The prompting method also shows promising results in the few-shot setting. Moreover, with the advanced speech LMs coming into the stage, the proposed prompting framework attains great potential.",
+    "authors": [
+      "Kai-Wei Chang",
+      "Haibin Wu",
+      "Yu-Kai Wang",
+      "Yuan-Kuei Wu",
+      "Hua Shen",
+      "Wei-Cheng Tseng",
+      "Iu-thing Kang",
+      "Shang-Wen Li",
+      "Hung-yi Lee"
+    ],
+    "url": "https://arxiv.org/abs/2408.13040v1",
+    "published": "2024-08-23T13:00:10Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Time, Tense and Aspect in Natural Language Database Interfaces",
+    "abstract": "Most existing natural language database interfaces (NLDBs) were designed to be used with database systems that provide very limited facilities for manipulating time-dependent data, and they do not support adequately temporal linguistic mechanisms (verb tenses, temporal adverbials, temporal subordinate clauses, etc.). The database community is becoming increasingly interested in temporal database systems, that are intended to store and manipulate in a principled manner information not only about the present, but also about the past and future. When interfacing to temporal databases, supporting temporal linguistic mechanisms becomes crucial.\n  We present a framework for constructing natural language interfaces for temporal databases (NLTDBs), that draws on research in tense and aspect theories, temporal logics, and temporal databases. The framework consists of a temporal intermediate representation language, called TOP, an HPSG grammar that maps a wide range of questions involving temporal mechanisms to appropriate TOP expressions, and a provably correct method for translating from TOP to TSQL2, TSQL2 being a recently proposed temporal extension of the SQL database language. This framework was employed to implement a prototype NLTDB using ALE and Prolog.",
+    "authors": [
+      "I. Androutsopoulos",
+      "G. D. Ritchie",
+      "P. Thanisch"
+    ],
+    "url": "https://arxiv.org/abs/cmp-lg/9803002v1",
+    "published": "1998-03-22T15:05:40Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Modular Mechanistic Networks: On Bridging Mechanistic and Phenomenological Models with Deep Neural Networks in Natural Language Processing",
+    "abstract": "Natural language processing (NLP) can be done using either top-down (theory driven) and bottom-up (data driven) approaches, which we call mechanistic and phenomenological respectively. The approaches are frequently considered to stand in opposition to each other. Examining some recent approaches in deep learning we argue that deep neural networks incorporate both perspectives and, furthermore, that leveraging this aspect of deep learning may help in solving complex problems within language technology, such as modelling language and perception in the domain of spatial cognition.",
+    "authors": [
+      "Simon Dobnik",
+      "John D. Kelleher"
+    ],
+    "url": "https://arxiv.org/abs/1807.09844v2",
+    "published": "2018-07-21T11:37:15Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Challenges Encountered in Turkish Natural Language Processing Studies",
+    "abstract": "Natural language processing is a branch of computer science that combines artificial intelligence with linguistics. It aims to analyze a language element such as writing or speaking with software and convert it into information. Considering that each language has its own grammatical rules and vocabulary diversity, the complexity of the studies in this field is somewhat understandable. For instance, Turkish is a very interesting language in many ways. Examples of this are agglutinative word structure, consonant/vowel harmony, a large number of productive derivational morphemes (practically infinite vocabulary), derivation and syntactic relations, a complex emphasis on vocabulary and phonological rules. In this study, the interesting features of Turkish in terms of natural language processing are mentioned. In addition, summary info about natural language processing techniques, systems and various sources developed for Turkish are given.",
+    "authors": [
+      "Kadir Tohma",
+      "Yakup Kutlu"
+    ],
+    "url": "https://arxiv.org/abs/2101.11436v1",
+    "published": "2021-01-21T08:30:33Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "Exploring the Landscape of Natural Language Processing Research",
+    "abstract": "As an efficient approach to understand, generate, and process natural language texts, research in natural language processing (NLP) has exhibited a rapid spread and wide adoption in recent years. Given the increasing research work in this area, several NLP-related approaches have been surveyed in the research community. However, a comprehensive study that categorizes established topics, identifies trends, and outlines areas for future research remains absent. Contributing to closing this gap, we have systematically classified and analyzed research papers in the ACL Anthology. As a result, we present a structured overview of the research landscape, provide a taxonomy of fields of study in NLP, analyze recent developments in NLP, summarize our findings, and highlight directions for future work.",
+    "authors": [
+      "Tim Schopf",
+      "Karim Arabi",
+      "Florian Matthes"
+    ],
+    "url": "https://arxiv.org/abs/2307.10652v5",
+    "published": "2023-07-20T07:33:30Z",
+    "source": "arxiv"
+  },
+  {
+    "title": "PyThaiNLP: Thai Natural Language Processing in Python",
+    "abstract": "We present PyThaiNLP, a free and open-source natural language processing (NLP) library for Thai language implemented in Python. It provides a wide range of software, models, and datasets for Thai language. We first provide a brief historical context of tools for Thai language prior to the development of PyThaiNLP. We then outline the functionalities it provided as well as datasets and pre-trained language models. We later summarize its development milestones and discuss our experience during its development. We conclude by demonstrating how industrial and research communities utilize PyThaiNLP in their work. The library is freely available at https://github.com/pythainlp/pythainlp.",
+    "authors": [
+      "Wannaphong Phatthiyaphaibun",
+      "Korakot Chaovavanich",
+      "Charin Polpanumas",
+      "Arthit Suriyawongkul",
+      "Lalita Lowphansirikul",
+      "Pattarawat Chormai",
+      "Peerat Limkonchotiwat",
+      "Thanathip Suntorntip",
+      "Can Udomcharoenchaikit"
+    ],
+    "url": "https://arxiv.org/abs/2312.04649v1",
+    "published": "2023-12-07T19:19:43Z",
+    "source": "arxiv"
+  }
+]
