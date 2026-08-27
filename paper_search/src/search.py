@@ -3,11 +3,17 @@ from pathlib import Path
 
 import torch
 
+from src.embedding_store import (
+    create_embeddings,
+    load_embeddings,
+    save_embeddings,
+)
 from src.embeddings import EmbeddingModel
 from src.models import Paper
 
 
 PAPERS_FILE = Path("data/papers.json")
+EMBEDDINGS_FILE = Path("data/paper_embeddings.pt")
 
 TOP_K = 5
 
@@ -20,73 +26,44 @@ def load_papers(path: Path) -> list[Paper]:
     with path.open("r", encoding="utf-8") as file:
         data = json.load(file)
 
-    return [
-        Paper.from_dict(item)
-        for item in data
-    ]
+    return [Paper.from_dict(item) for item in data]
 
 
-def paper_to_text(paper: Paper) -> str:
+def build_embedding_index(papers: list[Paper], model: EmbeddingModel) -> torch.Tensor:
     """
-    Create the text representation that will be embedded.
-
-    We combine the title and abstract because both contain
-    useful information for semantic search.
+    Generate and save embeddings for all papers.
     """
 
-    return f"{paper.title}. {paper.abstract}"
+    print("Generating paper embeddings...")
+    embeddings = create_embeddings(papers, model)
+
+    save_embeddings(embeddings, EMBEDDINGS_FILE)
+
+    return embeddings
 
 
-def search(
-    query: str,
-    papers: list[Paper],
-    model: EmbeddingModel,
-    top_k: int = TOP_K,
-) -> list[tuple[Paper, float]]:
+def search(query: str, papers: list[Paper], paper_embeddings: torch.Tensor, model: EmbeddingModel, top_k: int = TOP_K) -> list[tuple[Paper, float]]:
     """
-    Find the papers most semantically similar to the query.
+    Find papers semantically similar to the query.
     """
-
-    paper_texts = [
-        paper_to_text(paper)
-        for paper in papers
-    ]
-
-    paper_embeddings = model.encode(paper_texts)
 
     query_embedding = model.encode([query])[0]
 
-    similarities = torch.matmul(
-        paper_embeddings,
-        query_embedding,
-    )
+    similarities = torch.matmul(paper_embeddings, query_embedding)
 
-    top_results = torch.topk(
-        similarities,
-        k=min(top_k, len(papers)),
-    )
-
+    top_results = torch.topk(similarities, k=min(top_k, len(papers)))
     results: list[tuple[Paper, float]] = []
 
-    for index, score in zip(
-        top_results.indices,
-        top_results.values,
-    ):
+    for index, score in zip(top_results.indices, top_results.values):
         paper = papers[index.item()]
-        similarity = score.item()
-
-        results.append(
-            (paper, similarity)
-        )
+        results.append((paper, score.item()))
 
     return results
 
 
-def print_results(
-    results: list[tuple[Paper, float]],
-) -> None:
+def print_results(results: list[tuple[Paper, float]]) -> None:
     """
-    Display search results in a readable format.
+    Display search results.
     """
 
     if not results:
@@ -119,8 +96,12 @@ def main() -> None:
         return
 
     print(f"Loaded {len(papers)} papers.")
-
     model = EmbeddingModel()
+    if EMBEDDINGS_FILE.exists():
+        print("Loading existing paper embeddings...")
+        paper_embeddings = load_embeddings(EMBEDDINGS_FILE)
+    else:
+        paper_embeddings = build_embedding_index(papers, model)
 
     while True:
         print()
@@ -135,12 +116,7 @@ def main() -> None:
         if not query:
             continue
 
-        results = search(
-            query=query,
-            papers=papers,
-            model=model,
-        )
-
+        results = search(query=query, papers=papers, paper_embeddings=paper_embeddings, model=model)
         print_results(results)
 
 
