@@ -17,10 +17,7 @@ class EmbeddingModel:
         print(f"Loading embedding model: {model_name}")
         print(f"Using device: {self.device}")
 
-        self.model = SentenceTransformer(
-            model_name,
-            device=self.device,
-        )
+        self.model = SentenceTransformer(model_name, device = self.device,)
 
     def encode(self, texts: list[str]) -> torch.Tensor:
         """

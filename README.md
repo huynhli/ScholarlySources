@@ -1,7 +1,25 @@
 # ScholarlySources
 An academic journal aggregator to help you find peer-reviewed answers to your questions.
 
-## Use Case
+## Table of Contents
+- [Running Locally](#running-locally)
+- [Explanation](#explanation)
+    - [Use Case](#use-case)
+    - [Data Origin](#data-origin)
+    - [Preprocessing](#preprocessing)
+    - [Feature Extraction](#feature-extraction)
+    - [Dataset Stats](#dataset-statistics)
+    - [Train/validation/test methodology](#trainvalidationtest-methodology)
+    - [Model architecture](#model-architecture)
+    - [Evaluation](#evaluation)
+    - [Limitations/Reproducibility](#limitationsreproducibility)
+
+
+## Running locally
+Create a venv and run from inside
+
+## Explanation
+### Use Case
 - Need peer-reviewed papers to research/compare 
   
 ### Data Origin  

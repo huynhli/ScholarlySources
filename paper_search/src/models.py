@@ -19,10 +19,10 @@ class Paper:
     def from_dict(cls, data: dict[str, Any]) -> "Paper":
         """Create Paper object from a dictionary."""
         return cls(
-            title=data.get("title", ""),
-            abstract=data.get("abstract", ""),
-            authors=data.get("authors", []),
-            url=data.get("url", ""),
-            published=data.get("published", ""),
-            source=data.get("source", ""),
+            title = data.get("title", ""),
+            abstract = data.get("abstract", ""),
+            authors = data.get("authors", []),
+            url = data.get("url", ""),
+            published = data.get("published", ""),
+            source = data.get("source", ""),
         )

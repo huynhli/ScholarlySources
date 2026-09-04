@@ -19,10 +19,7 @@ ARXIV_URLS = [
 ]
 
 
-async def fetch(
-    client: httpx.AsyncClient,
-    url: str,
-) -> str:
+async def fetch(client: httpx.AsyncClient, url: str) -> str:
     """
     Fetch a URL asynchronously and return its response body.
     """
@@ -34,10 +31,7 @@ async def fetch(
     return response.text
 
 
-async def crawl_source(
-    client: httpx.AsyncClient,
-    url: str,
-) -> list[Paper]:
+async def crawl_source(client: httpx.AsyncClient, url: str) -> list[Paper]:
     """
     Fetch and parse one paper source.
     """
@@ -72,21 +66,10 @@ async def crawl(urls: list[str]) -> list[Paper]:
 
     timeout = httpx.Timeout(30.0)
 
-    headers = {
-        "User-Agent": "paper-search/0.1",
-    }
+    headers = {"User-Agent": "paper-search/0.1"}
 
-    async with httpx.AsyncClient(
-        timeout=timeout,
-        headers=headers,
-        follow_redirects=True,
-    ) as client:
-
-        tasks = [
-            crawl_source(client, url)
-            for url in urls
-        ]
-
+    async with httpx.AsyncClient(timeout = timeout, headers = headers, follow_redirects = True) as client:
+        tasks = [crawl_source(client, url) for url in urls]
         results = await asyncio.gather(*tasks)
 
     papers: list[Paper] = []
@@ -102,26 +85,12 @@ def save_papers(papers: list[Paper], path: Path) -> None:
     Save papers to a JSON file.
     """
 
-    path.parent.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
+    path.parent.mkdir(parents = True, exist_ok = True)
 
-    data = [
-        paper.to_dict()
-        for paper in papers
-    ]
+    data = [paper.to_dict() for paper in papers]
 
-    with path.open(
-        "w",
-        encoding="utf-8",
-    ) as file:
-        json.dump(
-            data,
-            file,
-            indent=2,
-            ensure_ascii=False,
-        )
+    with path.open("w", encoding = "utf-8") as file:
+        json.dump(data, file, indent = 2, ensure_ascii = False)
 
 
 async def main() -> None:
@@ -131,10 +100,7 @@ async def main() -> None:
 
     papers = await crawl(ARXIV_URLS)
 
-    save_papers(
-        papers,
-        OUTPUT_FILE,
-    )
+    save_papers(papers, OUTPUT_FILE)
 
     print()
     print(f"Saved {len(papers)} papers to {OUTPUT_FILE}")

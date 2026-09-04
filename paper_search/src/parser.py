@@ -28,12 +28,12 @@ def parse_feed(content: str, source: str = "unknown") -> list[Paper]:
             continue
 
         paper = Paper(
-            title=title,
-            abstract=abstract,
-            authors=authors,
-            url=url,
-            published=published,
-            source=source,
+            title = title,
+            abstract = abstract,
+            authors = authors,
+            url = url,
+            published = published,
+            source = source,
         )
 
         papers.append(paper)
@@ -49,7 +49,7 @@ def _get_text(parent, tag_name: str) -> str:
     if element is None:
         return ""
 
-    return element.get_text(" ", strip=True)
+    return element.get_text(" ", strip = True)
 
 
 def _extract_url(entry) -> str:
@@ -64,7 +64,7 @@ def _extract_url(entry) -> str:
         if href:
             return href.strip()
 
-        text = link.get_text(strip=True)
+        text = link.get_text(strip = True)
 
         if text:
             return text
@@ -73,7 +73,7 @@ def _extract_url(entry) -> str:
     guid = entry.find("guid")
 
     if guid is not None:
-        return guid.get_text(strip=True)
+        return guid.get_text(strip = True)
 
     return ""
 
@@ -88,7 +88,7 @@ def _extract_authors(entry) -> list[str]:
         name = author.find("name")
 
         if name is not None:
-            author_name = name.get_text(" ", strip=True)
+            author_name = name.get_text(" ", strip = True)
 
             if author_name:
                 authors.append(author_name)
@@ -98,7 +98,7 @@ def _extract_authors(entry) -> list[str]:
         creator = entry.find("creator")
 
         if creator is not None:
-            creator_name = creator.get_text(" ", strip=True)
+            creator_name = creator.get_text(" ", strip = True)
 
             if creator_name:
                 authors.append(creator_name)

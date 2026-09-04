@@ -4,7 +4,7 @@ from pathlib import Path
 import torch
 
 from src.embedding_store import (
-    create_embeddings,
+    generate_embeddings,
     load_embeddings,
     save_embeddings,
 )
@@ -35,7 +35,7 @@ def build_embedding_index(papers: list[Paper], model: EmbeddingModel) -> torch.T
     """
 
     print("Generating paper embeddings...")
-    embeddings = create_embeddings(papers, model)
+    embeddings = generate_embeddings(papers, model)
 
     save_embeddings(embeddings, EMBEDDINGS_FILE)
 
